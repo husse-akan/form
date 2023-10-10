@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registreringsformulär</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-box">
+      <h1>Kontaktformulär</h1>
+      <h4>Välj produkt samt vad ärendet handlar om.</h4>
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="name">
+          <label>Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="name"
+            required
+          />
+        </div>
+        <div class="lastname">
+          <label>lastname</label>
+          <input
+            id="lastname"
+            name="lastname"
+            type="text"
+            placeholder="lastname"
+          />
+        </div>
+        <div class="email">
+          <label>email</label>
+          <input id="email" name="email" type="text" placeholder="email" />
+        </div>
+        <div class="password">
+          <label for="pass">Password</label>
+          <input
+            id="pass"
+            name="password"
+            type="password"
+            placeholder="password"
+          />
+        </div>
+        <div class="radiogroup">
+          <p>Är du kund hos oss</p>
+          <input type="radio" id="kund" name="kontakt" value="ja,jag är kund" />
+          <label for="kund">ja, jag är kund</label>
+          <input
+            type="radio"
+            id="kund"
+            name="kund"
+            value="nej,jag är inte kund"
+          />
+          <label for="kund">nej, jag är inte kund</label>
+        </div>
+        <div class="checkbox">
+          <h5>Vilken produkt handlar din ärende om?</h5>
+          <input type="checkbox" id="mobil" name="phone" value="mobiltelefon" />
+          <label for="mobil"> mobiltelefon</label>
+
+          <input type="checkbox" id="band" name="kontakt" value="bredband" />
+          <label for="band"> bredband</label>
+
+          <input type="checkbox" id="television" name="tv" value="tvstream" />
+          <label for="television"> tv och stream</label>
+        </div>
+        <div class="message">
+          <label for="text">Message</label>
+          <p>beskriv vad din ärende handlar om</p>
+          <textarea
+            name="message"
+            id="message"
+            type="textarea"
+            cols="50"
+            rows="5"
+            placeholder="message"
+          ></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

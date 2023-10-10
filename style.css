@@ -1,0 +1,36 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+.form-box form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+.form-box {
+  background-color: white;
+  width: 100%;
+  padding: 25px;
+}
+.button button {
+  width: 100px;
+  background-color: steelblue;
+  color: black;
+}
+.radiogroup label {
+  display: inline-block;
+}
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  color: rgb(0, 0, 0);
+}
+textarea {
+  font-family: "Times New Roman", Times, serif;
+}
+label {
+  display: block;
+}
+.checkbox label {
+  display: inline-block;
+}
